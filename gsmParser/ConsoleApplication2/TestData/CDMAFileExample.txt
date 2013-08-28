@@ -1,0 +1,34 @@
+﻿*********************************
+*     HEADER DESCRIPTION
+*********************************
+Customer:        UMC
+Quantity:        10
+Type:            CDMA
+Profile:         01.00
+Batch:           3
+*
+Transport_key:   001
+*
+Address1:        UMC
+Address2:        Moskovskaya 21, Kiev 252010 Ukraine
+*
+Graph_ref:       01.00
+Artwork:         mts
+*
+Card_Manuf:      UMCCDMA
+PO_ref_number:   8864
+SIM_Reference:   SIM3-MT
+Mailer_Items:    PIN/PIN2/PUK/PUK2/Ser_nb
+*
+********************************
+*     INPUT VARIABLES
+********************************
+Var_In_List:
+IMSI:            <xsl:value-of select="HeaderTable/IMSI"/>
+Ser_nb:          <xsl:value-of select="HeaderTable/Ser_nb"/>
+MSISDN:          <xsl:value-of select="HeaderTable/MSISDN"/>
+*
+********************************
+*     OUTPUT VARIABLES
+*******************************
+Var_Out: PIN1/PUK1/PIN2/PUK2/HRPD_PASSWD/ADM1

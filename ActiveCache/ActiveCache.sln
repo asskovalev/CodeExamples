@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveCache.App", "ActiveCache.App\ActiveCache.App.csproj", "{1D20C2CE-586F-4114-912D-7933AB797A54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D20C2CE-586F-4114-912D-7933AB797A54}.Debug|x86.ActiveCfg = Debug|x86
+		{1D20C2CE-586F-4114-912D-7933AB797A54}.Debug|x86.Build.0 = Debug|x86
+		{1D20C2CE-586F-4114-912D-7933AB797A54}.Release|x86.ActiveCfg = Release|x86
+		{1D20C2CE-586F-4114-912D-7933AB797A54}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

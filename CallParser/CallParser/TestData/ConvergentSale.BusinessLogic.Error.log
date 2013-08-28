@@ -1,0 +1,173 @@
+2013-08-28 09:43:17,834 [15] ERROR Foris.TelCrm.ConvergentSale.Infrastructure.Implementation.ResourceService
+=======================================
+Method executed with exception:
+Method call: Foris.TelCrm.ConvergentSale.Infrastructure.Implementation.ResourceService.FindSimcard
+Call identity: ac53e05e77674bb29eca3cb8a93b9622
+Call duration = 1023 ms
+Start time = 2013.08.28 09:43:16,803
+End time = 2013.08.28 09:43:17,818
+Parameters:
+	[Int64] saleId = 118952
+	[FindSinglePhoneRequest] request = 
+<FindSinglePhoneRequest xmlns="http://schemas.datacontract.org/2004/07/Foris.TelCrm.ConvergentSale.Contracts.ServiceModel" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <FindInsideNumber>false</FindInsideNumber>
+  <NetworkOperatorCodeLinked i:nil="true" />
+  <StockCode>11</StockCode>
+  <TariffPlan xmlns:a="http://schemas.datacontract.org/2004/07/Foris.TelCrm.ConvergentSale.Contracts.BusinessModel">
+    <a:Name>МТС Москва - Оптима 100</a:Name>
+    <a:Code>10</a:Code>
+    <a:ExternalId>10</a:ExternalId>
+    <a:HostId>122824</a:HostId>
+    <a:OnlyOneTerminalDeviceOnPersonalAccount>false</a:OnlyOneTerminalDeviceOnPersonalAccount>
+  </TariffPlan>
+  <TerminalDeviceClass xmlns:a="http://schemas.datacontract.org/2004/07/Foris.TelCrm.ConvergentSale.Contracts.BusinessModel">
+    <a:Name>Multi</a:Name>
+    <a:Code>M</a:Code>
+    <a:ExternalId>65</a:ExternalId>
+    <a:Default>false</a:Default>
+  </TerminalDeviceClass>
+  <HostCode />
+  <Iccid>8970012343253629133</Iccid>
+  <MobileResourceId i:nil="true" />
+</FindSinglePhoneRequest>
+Exception: 
+
+=======================================
+Foris.TelCrm.ConvergentSale.Common.Exceptions.CustomerExistsException: Все найденные сим-карты связаны с другими пользователями
+   at Foris.TelCrm.ConvergentSale.Infrastructure.Controllers.SimcardFinder.FilterInCrm(IEnumerable`1 simcards)
+   at Foris.TelCrm.ConvergentSale.Infrastructure.Controllers.SimcardFinder.FindSimcards(IEnumerable`1 ranges, String stockCode, Nullable`1 findLinkedSim, String userNtName, TerminalDeviceClass terminalDeviceClass, String hostCode)
+   at Foris.TelCrm.ConvergentSale.Infrastructure.Implementation.ResourceService.FindSimcard(Int64 saleId, FindSinglePhoneRequest request)
+   at DynamicModule.ns.Wrapped_IResourceService_14cd35f93ce243c5aa458e1fb5acb381.<FindSimcard_DelegateImplementation>__1(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+2013-08-28 10:36:48,203 [18] ERROR Foris.TelCrm.ConvergentSale.Infrastructure.SaleService
+=======================================
+Method executed with exception:
+Method call: Foris.TelCrm.ConvergentSale.Infrastructure.SaleService.ValidateSale
+Call identity: 972b37de9c154038bc686c35ba78f872
+Call duration = 38 ms
+Start time = 2013.08.28 10:36:48,172
+End time = 2013.08.28 10:36:48,203
+Parameters:
+	[Int64] saleId = 118971
+Exception: 
+
+=======================================
+Foris.TelCrm.ConvergentSale.Common.Exceptions.SaleHaveNoTerminalDevicesException: В продаже нет приложений обслуживания.
+   at Foris.TelCrm.ConvergentSale.Infrastructure.Controllers.SaleValidator.ValidateSale(Int64 saleId)
+   at Foris.TelCrm.ConvergentSale.Infrastructure.SaleService.ValidateSale(Int64 saleId)
+   at DynamicModule.ns.Wrapped_ISaleService_e101383bb5334fc9855827016c8e74ab.<ValidateSale_DelegateImplementation>__10(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+2013-08-28 10:56:47,406 [12] ERROR Foris.TelCrm.ConvergentSale.Infrastructure.Implementation.ResourceService
+=======================================
+Method executed with exception:
+Method call: Foris.TelCrm.ConvergentSale.Infrastructure.Implementation.ResourceService.FindSimcard
+Call identity: 17d9a780efd6474088b52474452321c4
+Call duration = 774 ms
+Start time = 2013.08.28 10:56:46,625
+End time = 2013.08.28 10:56:47,406
+Parameters:
+	[Int64] saleId = 118977
+	[FindSinglePhoneRequest] request = 
+<FindSinglePhoneRequest xmlns="http://schemas.datacontract.org/2004/07/Foris.TelCrm.ConvergentSale.Contracts.ServiceModel" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <FindInsideNumber>false</FindInsideNumber>
+  <NetworkOperatorCodeLinked i:nil="true" />
+  <StockCode i:nil="true" />
+  <TariffPlan xmlns:a="http://schemas.datacontract.org/2004/07/Foris.TelCrm.ConvergentSale.Contracts.BusinessModel">
+    <a:Name>МТС Москва - Оптима 100</a:Name>
+    <a:Code>10</a:Code>
+    <a:ExternalId>10</a:ExternalId>
+    <a:HostId>122824</a:HostId>
+    <a:OnlyOneTerminalDeviceOnPersonalAccount>false</a:OnlyOneTerminalDeviceOnPersonalAccount>
+  </TariffPlan>
+  <TerminalDeviceClass xmlns:a="http://schemas.datacontract.org/2004/07/Foris.TelCrm.ConvergentSale.Contracts.BusinessModel">
+    <a:Name>Multi</a:Name>
+    <a:Code>M</a:Code>
+    <a:ExternalId>65</a:ExternalId>
+    <a:Default>false</a:Default>
+  </TerminalDeviceClass>
+  <HostCode />
+  <Iccid>8791111231210576007</Iccid>
+  <MobileResourceId i:nil="true" />
+</FindSinglePhoneRequest>
+Exception: 
+
+=======================================
+Foris.TelCrm.ConvergentSale.Common.Exceptions.StockEmptyResultException: На складе не найдено сим-карт в переданных диапазонах
+   at Foris.TelCrm.ConvergentSale.Infrastructure.Controllers.SimcardFinder.GetSimcards(IEnumerable`1 ranges, String stockCode, Nullable`1 findLinkedSim, String userNtName)
+   at Foris.TelCrm.ConvergentSale.Infrastructure.Controllers.SimcardFinder.FindSimcards(IEnumerable`1 ranges, String stockCode, Nullable`1 findLinkedSim, String userNtName, TerminalDeviceClass terminalDeviceClass, String hostCode)
+   at Foris.TelCrm.ConvergentSale.Infrastructure.Implementation.ResourceService.FindSimcard(Int64 saleId, FindSinglePhoneRequest request)
+   at DynamicModule.ns.Wrapped_IResourceService_04382d2e86dc43f0a698794882dd11b5.<FindSimcard_DelegateImplementation>__1(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+2013-08-28 11:00:27,174 [12] ERROR Foris.TelCrm.ConvergentSale.Infrastructure.Implementation.ResourceService
+=======================================
+Method executed with exception:
+Method call: Foris.TelCrm.ConvergentSale.Infrastructure.Implementation.ResourceService.FindSimcard
+Call identity: be4e27ce28c042738e2900a3cf5d2f96
+Call duration = 247 ms
+Start time = 2013.08.28 11:00:26,940
+End time = 2013.08.28 11:00:27,174
+Parameters:
+	[Int64] saleId = 118977
+	[FindSinglePhoneRequest] request = 
+<FindSinglePhoneRequest xmlns="http://schemas.datacontract.org/2004/07/Foris.TelCrm.ConvergentSale.Contracts.ServiceModel" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+  <FindInsideNumber>false</FindInsideNumber>
+  <NetworkOperatorCodeLinked i:nil="true" />
+  <StockCode>8</StockCode>
+  <TariffPlan xmlns:a="http://schemas.datacontract.org/2004/07/Foris.TelCrm.ConvergentSale.Contracts.BusinessModel">
+    <a:Name>МТС Москва - Оптима 100</a:Name>
+    <a:Code>10</a:Code>
+    <a:ExternalId>10</a:ExternalId>
+    <a:HostId>122824</a:HostId>
+    <a:OnlyOneTerminalDeviceOnPersonalAccount>false</a:OnlyOneTerminalDeviceOnPersonalAccount>
+  </TariffPlan>
+  <TerminalDeviceClass xmlns:a="http://schemas.datacontract.org/2004/07/Foris.TelCrm.ConvergentSale.Contracts.BusinessModel">
+    <a:Name>Multi</a:Name>
+    <a:Code>M</a:Code>
+    <a:ExternalId>65</a:ExternalId>
+    <a:Default>false</a:Default>
+  </TerminalDeviceClass>
+  <HostCode>4</HostCode>
+  <Iccid>8970016516549865385</Iccid>
+  <MobileResourceId>118981</MobileResourceId>
+</FindSinglePhoneRequest>
+Exception: 
+
+=======================================
+Foris.TelCrm.ConvergentSale.Common.Exceptions.CustomerExistsException: Все найденные сим-карты связаны с другими пользователями
+   at Foris.TelCrm.ConvergentSale.Infrastructure.Controllers.SimcardFinder.FilterInCrm(IEnumerable`1 simcards)
+   at Foris.TelCrm.ConvergentSale.Infrastructure.Controllers.SimcardFinder.FindSimcards(IEnumerable`1 ranges, String stockCode, Nullable`1 findLinkedSim, String userNtName, TerminalDeviceClass terminalDeviceClass, String hostCode)
+   at Foris.TelCrm.ConvergentSale.Infrastructure.Implementation.ResourceService.FindSimcard(Int64 saleId, FindSinglePhoneRequest request)
+   at DynamicModule.ns.Wrapped_IResourceService_04382d2e86dc43f0a698794882dd11b5.<FindSimcard_DelegateImplementation>__1(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+2013-08-28 11:03:05,426 [31] ERROR Foris.TelCrm.ConvergentSale.Infrastructure.SaleService
+=======================================
+Method executed with exception:
+Method call: Foris.TelCrm.ConvergentSale.Infrastructure.SaleService.ValidateSale
+Call identity: 7b6dcc72b9f340a5a0d9117738ae7aa4
+Call duration = 45 ms
+Start time = 2013.08.28 11:03:05,380
+End time = 2013.08.28 11:03:05,426
+Parameters:
+	[Int64] saleId = 118977
+Exception: 
+
+=======================================
+Foris.TelCrm.ConvergentSale.Common.Exceptions.HaveUndistributedServicesException: Необходимо распределить все услуги с типом тарификации АС по авансовым счетам
+   at Foris.TelCrm.ConvergentSale.Infrastructure.Controllers.SaleValidator.ValidateInvoices(Int64 saleId, IEnumerable`1 personalAccounts)
+   at Foris.TelCrm.ConvergentSale.Infrastructure.Controllers.SaleValidator.ValidateSale(Int64 saleId)
+   at Foris.TelCrm.ConvergentSale.Infrastructure.SaleService.ValidateSale(Int64 saleId)
+   at DynamicModule.ns.Wrapped_ISaleService_e101383bb5334fc9855827016c8e74ab.<ValidateSale_DelegateImplementation>__10(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
+2013-08-28 11:03:36,927 [41] ERROR Foris.TelCrm.ConvergentSale.Infrastructure.SaleService
+=======================================
+Method executed with exception:
+Method call: Foris.TelCrm.ConvergentSale.Infrastructure.SaleService.ValidateSale
+Call identity: 255989bf1a644e71b0b2b6b37bf340e7
+Call duration = 77 ms
+Start time = 2013.08.28 11:03:36,849
+End time = 2013.08.28 11:03:36,927
+Parameters:
+	[Int64] saleId = 118977
+Exception: 
+
+=======================================
+Foris.TelCrm.ConvergentSale.Common.Exceptions.HaveNewInvoicesException: Нужно отредактировать Авансовые счета: 'ЛС: 118980' 
+   at Foris.TelCrm.ConvergentSale.Infrastructure.Controllers.SaleValidator.ValidateInvoices(Int64 saleId, IEnumerable`1 personalAccounts)
+   at Foris.TelCrm.ConvergentSale.Infrastructure.Controllers.SaleValidator.ValidateSale(Int64 saleId)
+   at Foris.TelCrm.ConvergentSale.Infrastructure.SaleService.ValidateSale(Int64 saleId)
+   at DynamicModule.ns.Wrapped_ISaleService_e101383bb5334fc9855827016c8e74ab.<ValidateSale_DelegateImplementation>__10(IMethodInvocation inputs, GetNextInterceptionBehaviorDelegate getNext)
